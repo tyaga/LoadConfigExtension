@@ -1,0 +1,9 @@
+	$app->register(new Tyaga\Extension\LoadConfigExtension(), array(
+		'loadconfig.load' => array(
+			'database' => __DIR__ . '/config/database.yml',
+		)
+	));
+
+Then you can use:
+
+	$app['config']['database']
